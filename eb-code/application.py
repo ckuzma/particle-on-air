@@ -2,7 +2,7 @@ from flask import Flask
 from flask_restful import Resource, Api, reqparse
 
 ## Instantiate the Flask stuff
-app = Flask(__name__)
+application = app = Flask(__name__) # Formatted for EB
 api = Api(app)
 parser = reqparse.RequestParser()
 
